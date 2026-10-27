@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/js-project/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Portfolio</title>
+		<script type="module" crossorigin src="/js-project/index.js"></script>
+		<link rel="stylesheet" crossorigin href="/js-project/index.css">
+	</head>
+	<body>
+		<header class="header" id="header">
+	<a class="header__logo-link" href="#"
+		><img
+			class="header__logo-img"
+			srcset="/js-project/logo.png 1x, /js-project/logo.png 2x"
+			src="/js-project/logo.png"
+			alt="my photo"
+			width="80"
+			height="80"
+		/>
+		jefferson*
+	</a>
+	<div class="header__btns">
+		<button class="header__btns-menu" data-btn="menu">Menu</button>
+		<button class="header__btns-modal" data-btn="modal">
+			<span class="header__btns-modal-line first" data-line="first"></span>
+			<span class="header__btns-modal-line second" data-line="second"></span>
+		</button>
+	</div>
+	<nav class="header__nav">
+		<ul class="header__menu-list visually-hidden">
+			<li class="header__menu-item">
+				<a class="header__menu-link" href="#about">About me</a>
+			</li>
+			<li class="header__menu-item">
+				<a class="header__menu-link" href="#benefits">Benefits</a>
+			</li>
+			<li class="header__menu-item">
+				<a class="header__menu-link" href="#projects">Projects</a>
+			</li>
+			<li class="header__menu-item">
+				<a class="header__menu-link" href="#faq">FAQ</a>
+			</li>
+		</ul>
+		<a class="header__order" href="#work">Order the project</a>
+	</nav>
+</header>
+
+		<main>
+			<section class="hero" id="hero">
+	<h1 class="hero__title">
+		Hello.<br />
+		I’m Fullstack developer Lloyd Jefferson.
+	</h1>
+	<ul class="hero__list">
+		<li class="hero__item">
+			<ul class="hero__soc1al-list">
+				<li class="hero__soc1al-item">
+					<a
+						class="hero__link"
+						href="https://www.instagram.com/goitclub/  "
+						target="_blank"
+						>IG</a
+					>
+				</li>
+				<li class="hero__soc1al-item">
+					<a
+						class="hero__link"
+						href=" https://www.facebook.com/goITclub/  "
+						target="_blank"
+						>FB</a
+					>
+				</li>
+				<li class="hero__soc1al-item">
+					<a
+						class="hero__link"
+						href="https://www.youtube.com/c/GoIT  "
+						target="_blank"
+						>YT</a
+					>
+				</li>
+				<li class="hero__soc1al-item">
+					<a
+						class="hero__link"
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						>GH</a
+					>
+				</li>
+			</ul>
+		</li>
+		<li class="hero__item">
+			<a class="hero__link mail" href="mailto:lloydjefferson@gmail.com"
+				>lloydjefferson@gmail.com</a
+			>
+		</li>
+	</ul>
+</section>
+
+			<section class="about container" id="about">
+	<h2 class="about-hide">About me</h2>
+	<ul class="about-container">
+		<li class="about-container-li-first">
+			<p class="about-keycompetency">
+				I work with people all over the world to create impressive and
+				<span class="about-keycompetency-span-red">functional</span>
+				<span class="about-keycompetency-span-grey">websites</span> that reflect
+				each client's unique personality.
+			</p>
+		</li>
+		<li>
+			<picture class="about-photo">
+				<source
+					type="image/webp"
+					srcset="/js-project/about-PC-webP-1x.webp 1x, /js-project/about-PC-webP-2x.webp 2x"
+					media="(min-width: 1440px)"
+				/>
+				<source
+					type="image/webp"
+					srcset="/js-project/about-tab-webP-1x.webp 1x, /js-project/about-tab-webP-2x.webp 2x"
+					media="(min-width: 768px)"
+				/>
+				<source
+					type="image/webp"
+					srcset="/js-project/about-mob-webP-1x.webp 1x, /js-project/about-mob-webP-2x.webp 2x"
+					media="(max-width: 767px)"
+				/>
+				<img
+					class="about-photo"
+					src="/js-project/about-mob-1x.png"
+					alt="Photo"
+				/>
+			</picture>
+		</li>
+	</ul>
+
+	<ul id="about-list" class="about-accordion-container" data-accordion>
+		<li class="ac about__item" id="about-item">
+			<div class="about__icon-inner ac-trigger" id="inner">
+				<h2 class="ac-header about__item-title about-header" id="title">
+					ABOUT ME
+				</h2>
+				<button type="button" class="about__button" id="button-open">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel about__inner-text">
+				<ul class="about__list-answer about-me">
+					<li class="about-item-answer">
+						<p id="about-me" class="ac-text about__answer">
+							I am Lloyd Jefferson, a talented programmer with extensive
+							expertise in software development. I have an understanding of
+							different programming languages ​​and technologies, always ready
+							to improve my skills. I always follow the latest trends and look
+							for unconventional, creative solutions to problems. I have a high
+							level of analytical skills and am able to effectively solve even
+							the most difficult tasks encountered on the way.
+						</p>
+					</li>
+					<li class="about-item-answer">
+						<p id="about-me1" class="ac-text about__answer">
+							Able to work both independently and in a team. I can effectively
+							cooperate with colleagues, exchanging ideas and finding optimal
+							solutions. Professional maturity allows you to calmly cope with
+							challenges and stressful situations, while maintaining a high
+							quality of work.I am always looking for opportunities for
+							self-improvement. I actively study new technologies and practices
+							to stay abreast of the latest innovations. I have a strong
+							understanding of various programming languages, frameworks and
+							architectural concepts that allow me to create efficient and
+							scalable software.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="ac about__item" id="about-item1">
+			<div class="about__icon-inner ac-trigger" id="inner1">
+				<h2 class="ac-header about__item-title about-header" id="title1">
+					ROLE
+				</h2>
+				<button type="button" class="about__button" id="button-open1">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel about__inner-text">
+				<ul class="about__list-answer">
+					<li class="about-item-answer">
+						<p id="role" class="ac-text about__answer">Frontend development</p>
+					</li>
+					<li class="about-item-answer">
+						<p id="role1" class="ac-text about__answer">
+							HeadlessCMS,Wordpress
+						</p>
+					</li>
+					<li class="about-item-answer">
+						<p id="role2" class="ac-text about__answer">Blender(enjoy)</p>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="ac about__item" id="about-item2">
+			<div class="about__icon-inner ac-trigger" id="inner2">
+				<h2 class="ac-header about__item-title about-header" id="title2">
+					EDUCATION
+				</h2>
+				<button type="button" class="about__button" id="button-open2">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel about__inner-text">
+				<ul class="about__list-answer">
+					<li class="about-item-answer">
+						<p id="education" class="ac-text about__answer">
+							2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+							York
+						</p>
+					</li>
+					<li class="about-item-answer">
+						<p id="education1" class="ac-text about__answer">
+							2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+							School, New York
+						</p>
+					</li>
+					<li class="about-item-answer">
+						<p id="education2" class="ac-text about__answer">
+							2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+						</p>
+					</li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+	<div class="swipper-inner" id="swipper-inner">
+		<div id="swipper-box" class="swiper">
+			<ul id="swipper-list" class="swiper-wrapper about__skill-list">
+				<li id="slide1" class="swiper-slide about__skill-item red">
+					<p class="about__skill-text">HTML/CSS</p>
+				</li>
+				<li id="slide2" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">JavaScript</p>
+				</li>
+				<li id="slide3" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">React</p>
+				</li>
+				<li id="slide4" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">Node.js</p>
+				</li>
+				<li id="slide5" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">React Native</p>
+				</li>
+				<li id="slide6" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">Soft skills</p>
+				</li>
+				<li id="slide7" class="swiper-slide about__skill-item red">
+					<p class="about__skill-text">HTML/CSS</p>
+				</li>
+				<li id="slide8" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">JavaScript</p>
+				</li>
+				<li id="slide9" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">React</p>
+				</li>
+				<li id="slide10" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">Node.js</p>
+				</li>
+				<li id="slide11" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">React Native</p>
+				</li>
+				<li id="slide12" class="swiper-slide about__skill-item">
+					<p class="about__skill-text">Soft skills</p>
+				</li>
+			</ul>
+		</div>
+		<button id="swiper-button" class="swiper-button-next">
+			<svg width="28" height="28" class="icon-arrow default">
+				<use href="/js-project/sprite.svg#icon-arrow-right"></use>
+			</svg>
+		</button>
+	</div>
+</section>
+
+			<section class="benefits container" id="benefits">
+	<ul class="benefits__list">
+		<li class="benefits__item">
+			<h2 class="benefits__title">Benefits of working with me</h2>
+		</li>
+		<li class="benefits__item">
+			<ul class="benefits__left-list">
+				<li class="benefits__left-item">
+					<svg class="benefits__icon" width="48" height="48">
+						<use href="/js-project/sprite.svg#icon-benefits-man"></use>
+					</svg>
+					<div class="benefits__left-inner">
+						<h3 class="benefits__left-title">Expertise</h3>
+						<p class="benefits__left-text">
+							As a highly experienced developer, I have deep knowledge of
+							programming and website development.
+						</p>
+					</div>
+				</li>
+				<li class="benefits__left-item">
+					<svg class="benefits__icon" width="48" height="48">
+						<use href="/js-project/sprite.svg#icon-benefits-talk"></use>
+					</svg>
+					<div class="benefits__left-inner">
+						<h3 class="benefits__left-title">Communication</h3>
+						<p class="benefits__left-text">
+							Understanding your needs and wants is my priority and I am always
+							open to discussions and corrections.
+						</p>
+					</div>
+				</li>
+				<li class="benefits__left-item">
+					<svg class="benefits__icon" width="48" height="48">
+						<use href="/js-project/sprite.svg#icon-benefits-brush"></use>
+					</svg>
+					<div class="benefits__left-inner">
+						<h3 class="benefits__left-title">Art</h3>
+						<p class="benefits__left-text">
+							Thanks to my creative nature, I am ready to accept challenges and
+							help you bring your ideas to life.
+						</p>
+					</div>
+				</li>
+				<li class="benefits__left-item">
+					<svg class="benefits__icon" width="48" height="48">
+						<use href="/js-project/sprite.svg#icon-benefits-time"></use>
+					</svg>
+					<div class="benefits__left-inner">
+						<h3 class="benefits__left-title">Urgent execution</h3>
+						<p class="benefits__left-text">
+							I understand how important time is to you. Ready to work quickly
+							and efficiently, without reducing the quality of work.
+						</p>
+					</div>
+				</li>
+			</ul>
+			<a class="benefits__link" href="#work">Order the project</a>
+		</li>
+	</ul>
+</section>
+
+			<section class="projects container" id="projects">
+	<h2 class="projects-title">Projects</h2>
+
+	<div class="swiper" data-swiper="project">
+		<ul class="project-card-list swiper-wrapper">
+			<li class="project-card-item swiper-slide">
+				<div class="project-card-container">
+					<div class="card">
+						<ul class="tags">
+							<li class="tag">#react</li>
+							<li class="tag">#js</li>
+							<li class="tag">#node js</li>
+							<li class="tag">#git</li>
+						</ul>
+						<p class="project-card-text">
+							Programming Across Borders: Ideas, Technologies, Innovations
+						</p>
+						<a
+							href="https://github.com/Jaelouss/js-project"
+							target="_blank"
+							class="btn"
+							>See project</a
+						>
+					</div>
+					<div class="project-card-image">
+						<picture>
+							<source
+								srcset="/js-project/projects-tab-1-1x.webp 1x, /js-project/projects-tab-1-2x.webp 2x"
+								media="(min-width: 768px)"
+								type="image/webp"
+							/>
+							<source
+								srcset="/js-project/projects-mob-1-1x.webp 1x, /js-project/projects-mob-1-2x.webp 2x"
+								media="(max-width: 767px)"
+								type="image/webp"
+							/>
+							<img
+								src="/js-project/projects-mob-1.jpg"
+								width="311"
+								height="195"
+								alt="Project 1"
+							/>
+						</picture>
+					</div>
+				</div>
+			</li>
+
+			<li class="project-card-item swiper-slide">
+				<div class="project-card-container">
+					<div class="card">
+						<ul class="tags">
+							<li class="tag">#react</li>
+							<li class="tag">#js</li>
+							<li class="tag">#node js</li>
+							<li class="tag">#git</li>
+						</ul>
+						<p class="project-card-text">
+							Programming Across Borders: Ideas, Technologies, Innovations
+						</p>
+						<a
+							href="https://github.com/Jaelouss/js-project"
+							target="_blank"
+							class="btn"
+							>See project</a
+						>
+					</div>
+					<div class="project-card-image">
+						<picture class="">
+							<source
+								srcset="/js-project/projects-tab-2-1x.webp 1x, /js-project/projects-tab-2-2x.webp 2x"
+								media="(min-width: 768px)"
+								type="image/webp"
+							/>
+							<source
+								srcset="/js-project/projects-mob-2-1x.webp 1x, /js-project/projects-mob-2-2x.webp 2x"
+								media="(max-width: 767px)"
+								type="image/webp"
+							/>
+							<img
+								src="/js-project/projects-mob-2.jpg"
+								width="311"
+								height="195"
+								alt="Project 2"
+							/>
+						</picture>
+					</div>
+				</div>
+			</li>
+
+			<li class="project-card-item swiper-slide">
+				<div class="project-card-container">
+					<div class="card">
+						<ul class="tags">
+							<li class="tag">#react</li>
+							<li class="tag">#js</li>
+							<li class="tag">#node js</li>
+							<li class="tag">#git</li>
+						</ul>
+						<p class="project-card-text">
+							Programming Across Borders: Ideas, Technologies, Innovations
+						</p>
+						<a
+							href="https://github.com/Jaelouss/js-project"
+							target="_blank"
+							class="btn"
+							>See project</a
+						>
+					</div>
+					<div class="project-card-image">
+						<picture class="">
+							<source
+								srcset="/js-project/projects-tab-3-1x.webp 1x, /js-project/projects-tab-3-2x.webp 2x"
+								media="(min-width: 768px)"
+								type="image/webp"
+							/>
+							<source
+								srcset="data:image/webp;base64,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 1x, /js-project/projects-mob-3-2x.webp 2x"
+								media="(max-width: 767px)"
+								type="image/webp"
+							/>
+							<img
+								src="/js-project/projects-mob-3.jpg"
+								width="311"
+								height="195"
+								alt="Project 3"
+							/>
+						</picture>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="slider-controls">
+			<button class="slider-arrow left-arrow slider-prev" data-project="prev">
+				<svg class="rotate icon-arrow" width=" 24" height="24">
+					<use href="/js-project/sprite.svg#icon-arrow-right"></use>
+				</svg>
+			</button>
+			<button class="slider-arrow right-arrow slider-next" data-project="next">
+				<svg class="default icon-arrow" width="24" height="24">
+					<use href="/js-project/sprite.svg#icon-arrow-right"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
+
+			<section class="faq container" id="faq">
+	<h2 class="faq__title">FAQ</h2>
+	<ul class="accordion-container faq__list" id="faq-list">
+		<li class="ac faq__item" id="faq-item">
+			<div class="faq__icon-inner ac-trigger" id="faq-inner">
+				<h2 class="ac-header faq__item-title" id="faq-title">
+					What programming languages ​​are most often used in your project?
+				</h2>
+				<button type="button" class="faq__button" id="faq-button-open">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel faq__inner-text">
+				<p id="text" class="ac-text faq__answer">
+					In the field of web development, there are various technologies and
+					programming languages. Typically, this includes a combination of
+					frontend (client side) and backend (server side) languages.
+				</p>
+			</div>
+		</li>
+
+		<li class="ac faq__item" id="faq-item1">
+			<div class="faq__icon-inner ac-trigger" id="faq-inner1">
+				<h2 class="ac-header faq__item-title" id="faq-title1">
+					What are the deadlines for the project?
+				</h2>
+				<button type="button" class="faq__button" id="faq-button-open1">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel faq__inner-text">
+				<p id="text1" class="ac-text faq__answer">
+					The terms of project implementation depend to a large extent on a
+					number of factors, such as the scope of the project, its complexity,
+					and the availability of resources. Determining exact deadlines is a
+					difficult task, and it usually occurs during the planning phase of the
+					project.
+				</p>
+			</div>
+		</li>
+
+		<li class="ac faq__item" id="faq-item2">
+			<div class="faq__icon-inner ac-trigger" id="faq-inner2">
+				<h2 class="ac-header faq__item-title" id="faq-title2">
+					What payment methods do you accept?
+				</h2>
+				<button type="button" class="faq__button" id="faq-button-open2">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel faq__inner-text">
+				<p id="text2" class="ac-text faq__answer">
+					Payment through credit and debit cards such as Visa, MasterCard,
+					specialized electronic payment systems such as PayPal, as well as
+					payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+				</p>
+			</div>
+		</li>
+		<li class="ac faq__item" id="faq-item3">
+			<div class="faq__icon-inner ac-trigger" id="faq-inner3">
+				<h2 class="ac-header faq__item-title" id="faq-title3">
+					How can I contact you?
+				</h2>
+				<button type="button" class="faq__button" id="faq-button-open3">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel faq__inner-text">
+				<p id="text3" class="ac-text faq__answer">
+					In the field of web development, there are various technologies and
+					programming languages. Typically, this includes a combination of
+					frontend (client side) and backend (server side) languages.
+				</p>
+			</div>
+		</li>
+		<li class="ac faq__item" id="faq-item4">
+			<div class="faq__icon-inner ac-trigger" id="faq-inner4">
+				<h2 class="ac-header faq__item-title" id="faq-title4">
+					Do you provide advice or support?
+				</h2>
+				<button type="button" class="faq__button" id="faq-button-open4">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel faq__inner-text">
+				<p id="text4" class="ac-text faq__answer">
+					The terms of project implementation depend to a large extent on a
+					number of factors, such as the scope of the project, its complexity,
+					and the availability of resources. Determining exact deadlines is a
+					difficult task, and it usually occurs during the planning phase of the
+					project.
+				</p>
+			</div>
+		</li>
+		<li class="ac faq__item" id="faq-item5">
+			<div class="faq__icon-inner ac-trigger" id="faq-inner5">
+				<h2 class="ac-header faq__item-title" id="faq-title5">
+					What does the process of developing a software product look like from
+					idea to implementation?
+				</h2>
+				<button type="button" class="faq__button" id="faq-button-open5">
+					<svg width="20" height="20" class="icon-arrow default">
+						<use href="/js-project/sprite.svg#icon-arrow-down"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="ac-panel faq__inner-text">
+				<p id="text5" class="ac-text faq__answer">
+					Payment through credit and debit cards such as Visa, MasterCard,
+					specialized electronic payment systems such as PayPal, as well as
+					payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+				</p>
+			</div>
+		</li>
+	</ul>
+</section>
+
+			<section class="covers container" id="covers">
+	<h2 class="visually-hidden">Covers</h2>
+	<ul class="all-covers">
+		<li class="marquee absolute-top">
+			<ul class="group-of-covers anim-right anim-stop">
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/wallet.jpg 1x, /js-project/wallet@2x.jpg 2x"
+							src="/js-project/wallet.jpg"
+							alt="Wallet"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/english.jpg 1x, /js-project/english@2x.jpg 2x"
+							src="/js-project/english.jpg"
+							alt="English Excellence"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/ua-artistry.jpg 1x, /js-project/ua-artistry@2x.jpg 2x"
+							src="/js-project/ua-artistry.jpg"
+							alt="Ukrainian Artistry"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/starlight-studio.jpg 1x, /js-project/starlight-studio@2x.jpg 2x"
+							src="/js-project/starlight-studio.jpg"
+							alt="Starlight Studio"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/wallet.jpg 1x, /js-project/wallet@2x.jpg 2x"
+							src="/js-project/wallet.jpg"
+							alt="Wallet"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/english.jpg 1x, /js-project/english@2x.jpg 2x"
+							src="/js-project/english.jpg"
+							alt="English Excellence"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/ua-artistry.jpg 1x, /js-project/ua-artistry@2x.jpg 2x"
+							src="/js-project/ua-artistry.jpg"
+							alt="Ukrainian Artistry"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/starlight-studio.jpg 1x, /js-project/starlight-studio@2x.jpg 2x"
+							src="/js-project/starlight-studio.jpg"
+							alt="Starlight Studio"
+							class="cover-img"
+					/></a>
+				</li>
+			</ul>
+		</li>
+		<li class="marquee">
+			<ul class="group-of-covers anim-left anim-stop">
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/power-pulse.jpg 1x, /js-project/power-pulse@2x.jpg 2x"
+							src="/js-project/power-pulse.jpg"
+							alt="Power Pulse"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/mimino.jpg 1x, /js-project/mimino@2x.jpg 2x"
+							src="/js-project/mimino.jpg"
+							alt="Mimino"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/chego.jpg 1x, /js-project/chego@2x.jpg 2x"
+							src="/js-project/chego.jpg"
+							alt="Chego Jewerly"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/power-pulse.jpg 1x, /js-project/power-pulse@2x.jpg 2x"
+							src="/js-project/power-pulse.jpg"
+							alt="Power Pulse"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/mimino.jpg 1x, /js-project/mimino@2x.jpg 2x"
+							src="/js-project/mimino.jpg"
+							alt="Mimino"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/chego.jpg 1x, /js-project/chego@2x.jpg 2x"
+							src="/js-project/chego.jpg"
+							alt="Chego Jewerly"
+							class="cover-img"
+					/></a>
+				</li>
+			</ul>
+		</li>
+		<li class="marquee">
+			<ul class="group-of-covers anim-right anim-stop">
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/wallet.jpg 1x, /js-project/wallet@2x.jpg 2x"
+							src="/js-project/wallet.jpg"
+							alt="Wallet"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/english.jpg 1x, /js-project/english@2x.jpg 2x"
+							src="/js-project/english.jpg"
+							alt="English Excellence"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/ua-artistry.jpg 1x, /js-project/ua-artistry@2x.jpg 2x"
+							src="/js-project/ua-artistry.jpg"
+							alt="Ukrainian Artistry"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/starlight-studio.jpg 1x, /js-project/starlight-studio@2x.jpg 2x"
+							src="/js-project/starlight-studio.jpg"
+							alt="Starlight Studio"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/wallet.jpg 1x, /js-project/wallet@2x.jpg 2x"
+							src="/js-project/wallet.jpg"
+							alt="Wallet"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/english.jpg 1x, /js-project/english@2x.jpg 2x"
+							src="/js-project/english.jpg"
+							alt="English Excellence"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/ua-artistry.jpg 1x, /js-project/ua-artistry@2x.jpg 2x"
+							src="/js-project/ua-artistry.jpg"
+							alt="Ukrainian Artistry"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/starlight-studio.jpg 1x, /js-project/starlight-studio@2x.jpg 2x"
+							src="/js-project/starlight-studio.jpg"
+							alt="Starlight Studio"
+							class="cover-img"
+					/></a>
+				</li>
+			</ul>
+		</li>
+		<li class="marquee">
+			<ul class="group-of-covers anim-left anim-stop">
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/green-harvest.jpg 1x, /js-project/green-harvest@2x.jpg 2x"
+							src="/js-project/green-harvest.jpg"
+							alt="Green Harvest"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/energy-flow.jpg 1x, /js-project/energy-flow@2x.jpg 2x"
+							src="/js-project/energy-flow.jpg"
+							alt="Energy Flow"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/fruitbox.jpg 1x, /js-project/fruitbox@2x.jpg 2x"
+							src="/js-project/fruitbox.jpg"
+							alt="Fruitbox"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/green-harvest.jpg 1x, /js-project/green-harvest@2x.jpg 2x"
+							src="/js-project/green-harvest.jpg"
+							alt="Green Harvest"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/energy-flow.jpg 1x, /js-project/energy-flow@2x.jpg 2x"
+							src="/js-project/energy-flow.jpg"
+							alt="Energy Flow"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/fruitbox.jpg 1x, /js-project/fruitbox@2x.jpg 2x"
+							src="/js-project/fruitbox.jpg"
+							alt="Fruitbox"
+							class="cover-img"
+					/></a>
+				</li>
+			</ul>
+		</li>
+		<li class="marquee absolute-down">
+			<ul class="group-of-covers anim-right anim-stop">
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/wallet.jpg 1x, /js-project/wallet@2x.jpg 2x"
+							src="/js-project/wallet.jpg"
+							alt="Wallet"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/english.jpg 1x, /js-project/english@2x.jpg 2x"
+							src="/js-project/english.jpg"
+							alt="English Excellence"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/ua-artistry.jpg 1x, /js-project/ua-artistry@2x.jpg 2x"
+							src="/js-project/ua-artistry.jpg"
+							alt="Ukrainian Artistry"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/starlight-studio.jpg 1x, /js-project/starlight-studio@2x.jpg 2x"
+							src="/js-project/starlight-studio.jpg"
+							alt="Starlight Studio"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/wallet.jpg 1x, /js-project/wallet@2x.jpg 2x"
+							src="/js-project/wallet.jpg"
+							alt="Wallet"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/english.jpg 1x, /js-project/english@2x.jpg 2x"
+							src="/js-project/english.jpg"
+							alt="English Excellence"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/ua-artistry.jpg 1x, /js-project/ua-artistry@2x.jpg 2x"
+							src="/js-project/ua-artistry.jpg"
+							alt="Ukrainian Artistry"
+							class="cover-img"
+					/></a>
+				</li>
+				<li class="cover">
+					<a
+						href="https://github.com/Jaelouss/js-project"
+						target="_blank"
+						class="cover-link"
+						><img
+							srcset="/js-project/starlight-studio.jpg 1x, /js-project/starlight-studio@2x.jpg 2x"
+							src="/js-project/starlight-studio.jpg"
+							alt="Starlight Studio"
+							class="cover-img"
+					/></a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</section>
+
+			<section class="reviews container" id="reviews">
+	<h2 class="reviews__title">REVIEWS</h2>
+	<div class="reviews-swiper" data-box="swiper">
+		<ul id="reviews-list" class="swiper-wrapper" data-swiper="reviews"></ul>
+		<div class="swiper-btn" data-btn="box">
+			<button class="swiper-btn-prev" data-btn="prev">
+				<svg
+					width="24"
+					height="24"
+					class="review-left icon-arrow default rotate"
+				>
+					<use href="/js-project/sprite.svg#icon-arrow-right"></use>
+				</svg>
+			</button>
+			<button class="swiper-btn-next" data-btn="next">
+				<svg width="24" height="24" class="review-right icon-arrow default">
+					<use href="/js-project/sprite.svg#icon-arrow-right"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+</section>
+
+		</main>
+		<footer class="work container" id="work">
+	<div class="work__inner">
+		<div class="work__logo">
+			<img
+				class="work__logo-img"
+				srcset="/js-project/logo.png 1x, /js-project/logo.png 2x"
+				src="/js-project/logo.png"
+				alt="my photo"
+				width="44"
+				height="44"
+			/>
+			<h2 class="work__logo-text">
+				<span class="work__logo-line1"
+					>Let’s <span class="red-text">work</span></span
+				>
+				<span class="work__logo-line2">together</span>
+			</h2>
+		</div>
+		<form class="work__form" id="work-form">
+			<fieldset class="work__form-fieldset">
+				<input
+					class="work__form-email"
+					name="email"
+					type="email"
+					placeholder="clients@gmail.com"
+					pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+					required
+					title="Enter the correct email address (eg example@domain.com) "
+				/>
+				<textarea
+					class="work__form-comment"
+					name="comment"
+					id="work-form-comment"
+					placeholder="comments"
+					rows="1"
+					required
+				></textarea>
+			</fieldset>
+			<button class="work__form-send" id="button-send" type="submit">
+				Send
+			</button>
+		</form>
+		<nav class="work__nav">
+			<a href="mailto:lloydjefferson@gmail.com" class="work__email links"
+				>lloydjefferson@gmail.com</a
+			>
+			<a class="work__tel links" href="tel:+380111111111">+380 11 1111 11 11</a>
+		</nav>
+	</div>
+	<div class="work__overlay visually-hidden" id="work-overlay">
+		<div class="work__modal">
+			<button class="work__modal-btn" id="modal-close-btn">
+				<span
+					class="work__modal-btn-line first rotate"
+					data-line="first"
+				></span>
+				<span
+					class="work__modal-btn-line second rotate"
+					data-line="second"
+				></span>
+			</button>
+			<h3 class="work__modal-title">
+				Thank you for your interest in cooperation!
+			</h3>
+			<p class="work__modal-text">
+				The manager will contact you shortly to discuss further details and
+				opportunities for cooperation. Please stay in touch.
+			</p>
+		</div>
+	</div>
+</footer>
+
+	</body>
+</html>
