@@ -58,19 +58,26 @@ document
 					headers: {
 						'Content-Type': 'application/json',
 					},
+					timeout: 10000,
 				}
 			);
 
 			openModal();
 			this.reset();
 		} catch (error) {
+			const serviceUnavailable =
+				!error.response || error.response.status >= 500;
+			if (serviceUnavailable) {
+				alert(
+					'Sorry, the request service is temporarily unavailable, so your application could not be sent. Your message has been kept in the form — please try again later.'
+				);
+				console.warn('Request API unavailable:', error);
+				return;
+			}
+
 			let errorMessage =
 				'Error sending application. Please check the entered data and try again.';
-			if (error.response) {
-				errorMessage += ` Error code: ${error.response.status}`;
-			} else if (error.request) {
-				errorMessage += ' Network problem.';
-			}
+			errorMessage += ` Error code: ${error.response.status}`;
 			alert(errorMessage);
 			console.error('Error:', error);
 		}

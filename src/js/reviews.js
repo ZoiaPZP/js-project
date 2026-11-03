@@ -3,6 +3,15 @@ import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import axios from 'axios';
+import savedReviews from '../data/reviews.json';
+
+const API_TIMEOUT = 8000;
+
+// Fallback copy of the API reviews; avatars are stored in src/public/reviews/
+const fallbackReviews = savedReviews.map(review => ({
+	...review,
+	avatar_url: `${import.meta.env.BASE_URL}${review.avatar_url}`,
+}));
 
 const swiper = new Swiper('.reviews-swiper', {
 	modules: [Navigation, Pagination, Keyboard],
@@ -25,12 +34,17 @@ const swiper = new Swiper('.reviews-swiper', {
 async function fetchReviews() {
 	try {
 		const response = await axios.get(
-			'https://portfolio-js.b.goit.study/api/reviews'
+			'https://portfolio-js.b.goit.study/api/reviews',
+			{ timeout: API_TIMEOUT }
 		);
-		return response.data;
+		if (Array.isArray(response.data) && response.data.length > 0) {
+			return response.data;
+		}
+		console.warn('Reviews API returned no reviews, using saved reviews');
+		return fallbackReviews;
 	} catch (error) {
-		console.error('❌ Not found', error);
-		return [];
+		console.warn('Reviews API unavailable, using saved reviews', error);
+		return fallbackReviews;
 	}
 }
 
